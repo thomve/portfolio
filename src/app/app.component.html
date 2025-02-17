@@ -1,0 +1,10 @@
+<h1>{{ title }}</h1>
+
+<h2>Projects</h2>
+<ul>
+  @for (proj of projects; track proj) {
+    <li>{{ proj.name }}</li>
+    } @empty {
+    <li>There are no projects.</li>
+    }
+</ul>
