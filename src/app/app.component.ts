@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatButtonModule} from '@angular/material/button';
 
-import {MaterialModule} from './material.module';
 
 @Component({
   selector: 'app-root',
@@ -13,19 +14,23 @@ export class AppComponent {
   publications: any[] = [];
   projects: any[] = [];
 
-  constructor(private http: HttpClient) {}
-
   ngOnInit() {
     this.loadProjects();
   }
 
   loadProjects() {
-    this.http.get('/projects').subscribe(data => {
-      this.projects = data as any[];
-    });
+    this.projects = [{ id: 1, name: 'Data Science Dashboard' }, { id: 2, name: 'Carpe Diem'}];
   }
 
   refreshProjects() {
     this.loadProjects();
   }
 }
+
+@Component({
+  selector: 'button-overview-example',
+  templateUrl: 'button-overview-example.html',
+  styleUrl: 'button-overview-example.css',
+  imports: [MatButtonModule, MatDividerModule, MatIconModule],
+})
+export class ButtonOverviewExample {}
