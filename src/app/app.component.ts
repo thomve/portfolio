@@ -7,7 +7,8 @@ import {MatButtonModule} from '@angular/material/button';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  imports: [MatButtonModule, MatDividerModule, MatIconModule]
 })
 export class AppComponent {
   title = 'portfolio-website';
@@ -26,11 +27,3 @@ export class AppComponent {
     this.loadProjects();
   }
 }
-
-@Component({
-  selector: 'button-overview-example',
-  templateUrl: 'button-overview-example.html',
-  styleUrl: 'button-overview-example.css',
-  imports: [MatButtonModule, MatDividerModule, MatIconModule],
-})
-export class ButtonOverviewExample {}
