@@ -17,15 +17,3 @@ import { ContentComponent } from './content/content.component';
 export class AppComponent {
   title = 'angular-portfolio-app';
 }
-
-  // ngOnInit() {
-  //   this.loadProjects();
-  // }
-
-  // loadProjects() {
-  //   this.projects = [{ id: 1, name: 'Data Science Dashboard' }, { id: 2, name: 'Carpe Diem' }];
-  // }
-
-  // refreshProjects() {
-  //   this.loadProjects();
-  // }
