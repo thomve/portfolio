@@ -1,11 +1,10 @@
+<!-- <app-navbar></app-navbar> -->
+<nav>
+  <ul>
+    <li><a routerLink="/projects" routerLinkActive="active" ariaCurrentWhenActive="page">Projects</a></li>
+    <li><a routerLink="/publications" routerLinkActive="active" ariaCurrentWhenActive="page">Publications</a></li>
+  </ul>
+</nav>
 <h1>{{ title }}</h1>
-
-<h2>Projects</h2>
-<ul>
-  @for (proj of projects; track proj) {
-    <li>{{ proj.name }}</li>
-    } @empty {
-    <li>There are no projects.</li>
-    }
-</ul>
-<button mat-flat-button (click)="refreshProjects()">Refresh</button>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet />
