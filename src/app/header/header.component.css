@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #27333f;
+    background-color: #d3dae1;
 }
 
 .navbar .container {
@@ -9,24 +9,24 @@
 }
 
 .navbar-brand {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Roboto,'Courier New', Courier, monospace;
     font-weight: bold;
-    color: #f8f9fa;
+    color: #071625;
 }
 
 .nav-link {
-    color: #adb5bd;
+    color: #060708;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #f8f9fa;
+    color: #235281;
 }
 
 .nav-number {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color: #f8f9fa;
+    color: #064a22;
     margin-right: 5px;
 }
 
