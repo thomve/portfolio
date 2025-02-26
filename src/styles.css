@@ -20,35 +20,6 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.a-green {
-    color: #0e3132;
-    position: relative;
-    text-decoration: none;
-}
-
-.a-green::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: #1b7d1b;
-    transition: width 0.3s ease, background-color 0.3s ease;
-}
-
-.a-green:hover::after {
-    width: 100%;
-    left: 0;
-    background: #0db8d7;
-}
-
-.a-green:hover,
-.a-green:active {
-    color: #227faa;
-}
-
 button {
     background-color: #e8ecf000;
     border: 2px solid #156165;

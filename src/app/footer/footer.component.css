@@ -45,15 +45,7 @@
     margin-top: 5px;
     right: 0;
     background: #259cc0;
-    transition: width 0.3s ease, background-color 0.3s ease;
 }
-
-.footer-icons a:hover::after {
-    width: 100%;
-    left: 0;
-    background: #29709a;
-}
-
 .footer-icons a:hover,
 .footer-icons a:active {
     color: #325374;
