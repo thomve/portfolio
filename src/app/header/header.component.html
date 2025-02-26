@@ -1,25 +1,14 @@
-<div class="shadow-sm bg-dark">
-    <nav class="navbar navbar-expand-md">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand text-light" href="https://github.com/thomve" target="_blank"
-                class="a-green surname">My Github</a>
-            <ul class="nav">
-                <li class="nav-item">
-                    <a routerLink="/home" routerLinkActive="text-light" class="nav-link text-secondary a-green">Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/projects" routerLinkActive="text-light"
-                        class="nav-link text-secondary a-green">Projects
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a routerLink="/publications" routerLinkActive="text-light"
-                        class="nav-link text-secondary a-green">Publications
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</div>
+<mat-toolbar>
+    <a mat-icon-button routerLink="/home" aria-hidden="false" aria-label="home" fontIcon="home">
+        <mat-icon routerLink="/home" aria-hidden="false" aria-label="home" fontIcon="home"></mat-icon>
+    </a>
+    <span class="example-spacer"></span>
+    <a mat-button routerLink="/home" routerLinkActive="text-light" class="button-spacer text-secondary">Home</a>
+    <a mat-button routerLink="/projects" routerLinkActive="text-light" class="button-spacer text-secondary">Projects</a>
+    <a mat-button routerLink="/publications" routerLinkActive="text-light" class="button-spacer text-secondary">Publications</a>
+    <a mat-button href="https://github.com/thomve" target="_blank" class="button-spacer text-secondary">Github</a>
+    <a mat-button href="https://huggingface.co/thomve" target="_blank" class="button-spacer text-secondary">Hugging Face</a>
+    <span class="example-spacer"></span>
+    <a mat-flat-button routerLink="/contact" routerLinkActive="text-light" class="text-secondary">Contact</a>
+</mat-toolbar>
 <router-outlet></router-outlet>
