@@ -1,20 +1,30 @@
-<div class="default-container">
+<div class="align-items-center default-container">
     <div class="col-lg-8">
         <div class="content">
             <div class="content-left">
+                <p>Please fill the information below</p>
                 <mat-form-field>
                     <mat-label>Name</mat-label>
                     <input matInput>
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Email</mat-label>
-                    <input matInput>
+                    <input matInput placeholder="email@example.com" [formControl]="email" (blur)="updateErrorMessage()"
+                        required />
+                    @if (email.invalid) {
+                    <mat-error>{{errorMessage()}}</mat-error>
+                    }
                 </mat-form-field>
                 <mat-form-field>
                     <mat-label>Message</mat-label>
-                    <textarea matInput></textarea>
+                    <textarea matInput style="height: 250px;"></textarea>
                 </mat-form-field>
-                <a mat-flat-button>Contact</a>
+                <div class="example-button-container">
+                    <a mat-fab extended routerLink=".">
+                        Send
+                        <mat-icon>mail</mat-icon>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
